@@ -20,11 +20,27 @@ int isPrime(int num)
 	return 1;
 }
 
+/*
+ * main - finds and prints all three-digit prime numbers
+ * Returns:
+ *   0 on success
+ */
 int main (void)
 {
-	printf("Results: \n");
-	for(int i = 101; i < 1000; ++i){
-		if(isPrime(i)){
-			printf ("%d ", i);	}
+	int i;
+	int counter = 0;  /* counter for prime numbers */
+
+	printf("Three-digit prime numbers: \n");
+
+	for(i = 101; i < 1000; ++i){
+		if(isPrime(i))
+		{
+			printf ("%d ", i);
+			++count;
+		}
 	}
+
+	printf ("\nTotal count: %d\n", count);
+
+        return 0;
 }
