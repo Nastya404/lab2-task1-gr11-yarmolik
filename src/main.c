@@ -36,11 +36,11 @@ int main (void)
 		if(isPrime(i))
 		{
 			printf ("%d ", i);
-			++count;
+			++counter;
 		}
 	}
 
-	printf ("\nTotal count: %d\n", count);
+	printf ("\nTotal count: %d\n", counter);
 
         return 0;
 }
